@@ -1,0 +1,24 @@
+<div *ngIf="load" id="loader"></div>
+
+
+<table *ngIf="!load" id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>City</th>
+    <th>Contact No.</th>
+    <th>Action</th>
+    <th>Admin action</th>
+  </tr>
+  
+  <tr *ngFor="let user of users">
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.city}}</td>
+    <td>{{user.number}}</td>
+    <td><button>Edit</button></td>
+    <td><button disabled="{{admin}}">Delete</button></td>
+
+  </tr>
+
+</table>
