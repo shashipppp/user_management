@@ -7,8 +7,8 @@ const user_controller = require('../controllers/auth');
 const check_auth = require ('../controllers/check-auth');
 
 
-//const db = "mongodb://shashipppp:shashi3333@ds019936.mlab.com:19936/user_management";
-const db="mongodb://shashipppp:shashi3333@ds019936.mlab.com:19936/user_management";
+
+const db=" ";
 
 mongoose.Promise = global.Promise;
 var options =  { useMongoClient: true, keepAlive: 1, connectTimeoutMS: 30000, reconnectTries: 30, reconnectInterval: 5000 }
