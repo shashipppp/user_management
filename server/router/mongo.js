@@ -2,7 +2,7 @@ const mongoose = require ('mongoose');
 
 exports.connect = async()=>{
     console.log('mongo')
-    await mongoose.connect("mongodb://shashipppp:shashi3333@ds019936.mlab.com:19936/user_management",(err)=>{
+    await mongoose.connect("",(err)=>{
         if(err){
             console.log('mongoErr'+err);
         }else{
@@ -12,7 +12,7 @@ exports.connect = async()=>{
 }
 
 exports.disconnect = async()=>{
-    await mongoose.connection.close("mongodb://shashipppp:shashi3333@ds019936.mlab.com:19936/user_management",(err)=>{
+    await mongoose.connection.close("",(err)=>{
         if(err){
             console.log('mongoErr'+err);
         }else{
